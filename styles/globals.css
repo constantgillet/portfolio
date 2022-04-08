@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-weight: normal;
+        src: url("../assets/fonts/IBMPlexMono-Regular.ttf");
+    }
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-weight: 500;
+        src: url("../assets/fonts/IBMPlexMono-Medium.ttf");
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-bgLight text-gray-900 dark:bg-black dark:text-gray-100 font-mono;
+        @apply min-h-screen;
+        transition: background-color 0.3s ease-out;
+    }
+}
+
