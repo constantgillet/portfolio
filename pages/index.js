@@ -18,11 +18,11 @@ export default function Home() {
       </Head>
       <Container>
         <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-6 flex justify-center items-center flex-col">
+          <div className="col-span-12 md:col-span-6 flex justify-center items-center flex-col mt-8 md:mt-0">
             <div className="relative w-fit">
               <div className="bg-black dark:bg-white w-full h-full absolute top-[6px] left-[6px]"></div>
               <h1
-                className="font-bold dark:text-white text-5xl w-fit py-4 px-6 border border-black dark:border-white bg-white dark:bg-black
+                className="font-bold dark:text-white text-4xl md:text-5xl w-fit py-4 px-6 border border-black dark:border-white bg-white dark:bg-black
                   relative"
               >
                 Software
@@ -32,19 +32,19 @@ export default function Home() {
             <div className="relative w-fit mt-6 translate-x-[-7px] translate-y-[-7px] rotate-[8deg]">
               <div className="bg-black dark:bg-white w-full h-full absolute top-[6px] left-[6px]"></div>
               <h1
-                className="font-bold dark:text-white text-5xl w-fit py-4 px-6 border border-black dark:border-white bg-white dark:bg-black
+                className="font-bold dark:text-white text-4xl md:text-5xl w-fit py-4 px-6 border border-black dark:border-white bg-white dark:bg-black
                   relative"
               >
                 Engineer
               </h1>
             </div>
-            <div className="flex w-full">
+            <div className="flex w-full justify-center md:justify-start">
               <p className="font-medium text-2xl max-w-[337px] mt-12">
                 This website is about what I have created, what inspires me.
               </p>
             </div>
           </div>
-          <div className="col-span-6 flex justify-end">
+          <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end">
             <img
               src={indexBackground.src}
               width={384}

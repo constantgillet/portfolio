@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Article({ className, title, date, text, link = "#" }) {
   return (
-    <article className="col-span-4">
+    <article className="col-span-12 sm:col-span-4 my-4 sm:my-0">
       <Link href={link}>
         <a title="Article">
           <h3 className="font-bold uppercase mb-4 text-lg">{title}</h3>

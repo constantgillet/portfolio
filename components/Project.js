@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Project({ title = "", image, link = "/#" }) {
   return (
-    <article className="group col-span-4 bg-white dark:bg-bgDarkSecondary border border-black dark:border-white p-3">
+    <article className="group col-span-12 sm:col-span-4 bg-white dark:bg-bgDarkSecondary border border-black dark:border-white p-3 ">
       <Link href={link}>
         <a title="Project">
           <div className="border border-black dark:border-white overflow-hidden">
