@@ -21,7 +21,7 @@ export function Footer() {
     if (currentTheme === "dark") {
       return (
         <div
-          className="absolute top-1/2 right-0 -translate-y-1/2 flex items-center cursor-pointer"
+          className="sm:absolute sm:top-1/2 sm:right-0 sm:-translate-y-1/2 flex items-center justify-center pb-3 sm:pb-0 cursor-pointer"
           onClick={() => setTheme("light")}
         >
           <img src={sunIcon.src} width={16} height={16} />
@@ -33,7 +33,7 @@ export function Footer() {
     } else {
       return (
         <div
-          className="absolute top-1/2 right-0 -translate-y-1/2 flex items-center cursor-pointer"
+          className="sm:absolute sm:top-1/2 sm:right-0 sm:-translate-y-1/2 flex items-center justify-center pb-3 sm:pb-0 cursor-pointer"
           onClick={() => setTheme("dark")}
         >
           <img src={moonIcon.src} width={16} height={16} />
