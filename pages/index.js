@@ -64,16 +64,19 @@ export default function Home() {
             title="Books that I like"
             date="07 juillet 2022"
             text="Tu trouveras sur cette page les deniers livres que j’ai lu, en espérant que cela t’inspire aussi."
+            link="/articles/dqzd"
           />
           <Article
             title="Books that I like"
             date="07 juillet 2022"
             text="Tu trouveras sur cette page les deniers livres que j’ai lu, en espérant que cela t’inspire aussi."
+            link="/articles/dqzd"
           />
           <Article
             title="Books that I like"
             date="07 juillet 2022"
             text="Tu trouveras sur cette page les deniers livres que j’ai lu, en espérant que cela t’inspire aussi."
+            link="/articles/dqzd"
           />
         </section>
         <div className="mt-8 flex justify-center">

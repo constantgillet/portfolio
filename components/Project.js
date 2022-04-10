@@ -9,7 +9,7 @@ export function Project({ title = "", image, link = "/#" }) {
           <div className="border border-black dark:border-white overflow-hidden">
             <img
               src={image}
-              width={229}
+              width="100%"
               height={140}
               alt="Project image"
               className="group-hover:scale-110 transition-transform"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export default function Article({ className, title, date, text, link = "#" }) {
   return (
     <article className="col-span-12 sm:col-span-4 my-4 sm:my-0">
