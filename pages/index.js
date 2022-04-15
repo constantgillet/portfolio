@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Separator } from "../components/Separator";
 import { Project } from "../components/Project";
 import projectImage from "../assets/images/project.png";
+import { getLastPosts } from "../lib/posts";
 
 export default function Home() {
   return (
@@ -64,19 +65,19 @@ export default function Home() {
             title="Books that I like"
             date="07 juillet 2022"
             text="Tu trouveras sur cette page les deniers livres que j’ai lu, en espérant que cela t’inspire aussi."
-            link="/articles/dqzd"
+            link="/posts/test"
           />
           <Article
             title="Books that I like"
             date="07 juillet 2022"
             text="Tu trouveras sur cette page les deniers livres que j’ai lu, en espérant que cela t’inspire aussi."
-            link="/articles/dqzd"
+            link="/posts/test"
           />
           <Article
             title="Books that I like"
             date="07 juillet 2022"
             text="Tu trouveras sur cette page les deniers livres que j’ai lu, en espérant que cela t’inspire aussi."
-            link="/articles/dqzd"
+            link="/posts/test"
           />
         </section>
         <div className="mt-8 flex justify-center">
@@ -123,4 +124,14 @@ function TitleSeparator() {
   return (
     <div className="w-[126px] h-[2px] bg-black dark:bg-white mx-auto mt-0.5 after:w-2 after:h-2 after:bg-black dark:after:bg-white relative after:absolute after:left-1/2 after:top-1/2 after:-translate-y-1/2"></div>
   );
+}
+
+export async function getStaticProps() {
+  const posts = await getLastPosts();
+
+  return {
+    props: {
+      posts: posts,
+    },
+  };
 }
