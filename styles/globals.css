@@ -23,3 +23,19 @@
     }
 }
 
+@layer base {
+    .post-content h1 {
+        @apply text-2xl font-bold mb-6;
+    }
+
+    .post-content h2 {
+        @apply text-xl font-bold mb-6;
+    }
+
+    .post-content p {
+        @apply mb-4;
+    }
+}
+
+
+
