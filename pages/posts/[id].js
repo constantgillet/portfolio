@@ -15,17 +15,22 @@ export default function PostPage({ postData }) {
       </Head>
       <Container>
         <div className="flex justify-center flex-col">
-          <Image
-            src={`/images/${postData?.hero_image}`}
-            width={852}
-            height={425}
-          />
-          <h1 className={"text-center text-2xl font-bold mt-4"}>
+          {postData?.hero_image ? (
+            <Image
+              src={`/images/${postData?.hero_image}`}
+              width={852}
+              height={425}
+            />
+          ) : (
+            <div></div>
+          )}
+
+          <h1 className={"text-center text-2xl font-bold mt-6"}>
             {postData?.title}
           </h1>
           <TitleSeparator />
         </div>
-        <div className="max-w-fit mx-auto my-6 px-5 border-black dark:border-white border-t border-b text-center font-light text-sm">
+        <div className="max-w-fit mx-auto my-7 px-5 border-black dark:border-white border-t border-b text-center font-light text-sm">
           {postData?.date
             ? new Date(postData.date).toLocaleDateString("en-US", {
                 weekday: "long",
@@ -35,7 +40,7 @@ export default function PostPage({ postData }) {
               })
             : ""}
         </div>
-        <Separator className={"mb-6"} />
+        <Separator className={"mb-8"} />
         <div
           dangerouslySetInnerHTML={{ __html: postData?.contentHtml }}
           className="post-content"
