@@ -16,10 +16,25 @@
 }
 
 @layer base {
+
+    * {
+        cursor: none;
+    }
+
     body {
         @apply bg-bgLight text-gray-900 dark:bg-black dark:text-gray-100 font-mono;
         @apply min-h-screen;
         transition: background-color 0.3s ease-out;
+    }
+
+    #cursor {
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        transform: translate(-50%, -50%);
+        background-image: url("../assets/images/banana1.gif");
+        pointer-events: none;
+        z-index: 999;
     }
 }
 
